@@ -1,0 +1,21 @@
+{
+  "name": "team-up-api",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nguyenchr/team-up-api"
+  },
+  "author": "Chris Nguyen",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "~0.8.2",
+    "koa-route": "~1.1.4",
+    "koa-bodyparser": "~1.0.1",
+    "team-up": "0.0.1",
+    "lodash": "~2.4.1"
+  }
+}
