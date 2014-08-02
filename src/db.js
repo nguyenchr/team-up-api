@@ -12,6 +12,11 @@ module.exports = {
   get: function* () {
     console.log('retrieving players from db')
     return players
+  },
+  update: function* (player) {
+    console.log('updating player', player)
+    _.find(players, {id: player.id}) = player
+    return
   }
 
 }

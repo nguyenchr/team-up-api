@@ -13,7 +13,7 @@ module.exports = {
     if(foundPlayers) {
       this.status = 200
       var teams = teamUp.sort(foundPlayers)
-      this.body = {teams: removeExtraInformation(teams)}
+      this.body = {teams: removeExtraInformation(_.shuffle(teams))}
     }
     else {
       this.status = 404

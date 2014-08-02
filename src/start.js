@@ -3,6 +3,7 @@ var koa      = require('koa')
 , bodyParser = require('koa-bodyparser')
 , players    = require('./players')
 , teams      = require('./teams')
+, score      = require('./score')
 , app        = koa();
 
 PORT = 3000
@@ -32,6 +33,8 @@ app.use(route.get ('/players', players.getAll));
 app.use(route.post('/players', players.create));
 
 app.use(route.get ('/teams', teams.get));
+
+app.use(route.post ('/score', score.processScore))
 
 app.listen(PORT);
 console.log("APP Listening on port", PORT)
